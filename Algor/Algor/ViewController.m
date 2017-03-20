@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // reverse a string 逆序字符串
+    NSString *base = @"abcdefg";
+    NSMutableString *str = [NSMutableString stringWithCapacity:base.length];
+    for (NSInteger i = base.length - 1; i>= 0; --i) {
+        unichar ch = [base characterAtIndex:i];
+        [str appendFormat: @"%c", ch];
+    }
+    
+    
+    
 }
 
 
